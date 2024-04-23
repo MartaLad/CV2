@@ -183,6 +183,7 @@ color: #ff7df4;
     font-size: 40px;
     color: white;
     margin-bottom: 10px;
+    text-align: center;
     text-shadow: 3px 3px #640e50, 2px 2px #7e0573;
 }
 
@@ -308,7 +309,7 @@ color: #ff7df4;
 .contacts__container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }
 
@@ -326,4 +327,40 @@ color: #ff7df4;
     height: 48px;
     width: 48px;
     padding-right: 5px;
+}
+
+/* media */
+@media (max-width: 1600px) {
+    .tabs-nav__btn {
+font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    body {
+        background-color: #1c1e3d;
+        background-image: none;
+    }
+
+    main {
+        background-image: url(img/1661438575_13-oir-mobi-p-zadnii-fon-odnotonnii-krasivo-14.jpg);
+    }
+
+    .tabs-nav__item:not(:last-child) {
+        margin-right: 20px;
+    }
+    
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__left {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .about__right {
+        width: 50%;
+    }
 }
