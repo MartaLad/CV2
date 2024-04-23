@@ -68,9 +68,9 @@ main {
 }
 
 ul {
-list-style: none;
-margin: 0;
-padding: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -126,12 +126,16 @@ body {
     margin-right: 30px;
 }
 
+.tabs-nav__btn--active {
+    color: #7b6679;
+}
+
 .tabs-nav__btn {
     position: relative;
-font-size: 30px;
-font-weight: 700;
-border-bottom: 1px solid transparent;
-transition: color 0.5s ease-in-out;
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+    transition: color 0.5s ease-in-out;
 }
 
 .tabs-nav__btn::after {
@@ -153,7 +157,7 @@ transition: color 0.5s ease-in-out;
 }
 
 .tabs-nav__btn:hover {
-color: #ff7df4;
+    color: #ff7df4;
 
 }
 
@@ -170,7 +174,7 @@ color: #ff7df4;
     justify-content: space-between;
 }
 
-.about__left {
+.about__right {
     width: 55%;
     display: flex;
     justify-content: center;
@@ -182,7 +186,7 @@ color: #ff7df4;
 .about__title {
     font-size: 40px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     text-align: center;
     text-shadow: 3px 3px #640e50, 2px 2px #7e0573;
 }
@@ -194,17 +198,17 @@ color: #ff7df4;
     text-align: center;
 }
 
-.about__right {
+.about__left {
     position: relative;
     width: 35%;
 }
 
-.about__right-photo {
+.about__left-photo {
     height: 100%;
     object-fit: cover;
 }
 
-.about__right::after {
+.about__left::after {
     content: '';
     position: absolute;
     border: 3px solid white;
@@ -298,7 +302,7 @@ color: #ff7df4;
     font-weight: 700;
     font-size: 21px;
     padding-bottom: 5px;
-} 
+}
 
 .courses__name {
     font-size: 21px;
@@ -332,7 +336,7 @@ color: #ff7df4;
 /* media */
 @media (max-width: 1600px) {
     .tabs-nav__btn {
-font-size: 20px;
+        font-size: 20px;
     }
 }
 
@@ -349,18 +353,18 @@ font-size: 20px;
     .tabs-nav__item:not(:last-child) {
         margin-right: 20px;
     }
-    
+
     .about__container {
         flex-direction: column;
         align-items: center;
     }
 
-    .about__left {
+    .about__right {
         width: 100%;
         margin-bottom: 30px;
     }
 
-    .about__right {
+    .about__left {
         width: 50%;
     }
 }
