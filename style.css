@@ -180,22 +180,41 @@ body {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .about__title {
     font-size: 40px;
     color: white;
     margin-bottom: 30px;
-    text-align: center;
     text-shadow: 3px 3px #640e50, 2px 2px #7e0573;
 }
 
-.about__descr {
+.about__right-border {
+    border-left: 5px solid white;
+    padding-left: 30px;
+}
+
+.about__right-descr {
+    position: relative;
     font-size: 30px;
     color: white;
     width: 80%;
-    text-align: center;
+}
+
+.about__right-descr::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: #640e50;
+    border: 1px solid white;
+    border-radius: 5px;
+    left: -43px;
+    top: 8px;
+}
+
+.about__right-descr:not(:last-child) {
+    margin-bottom: 25px;
 }
 
 .about__left {
